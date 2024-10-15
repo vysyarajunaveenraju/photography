@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - [Sister's Name] Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sruthi's Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="photos">
+                <img src="Chelliimg1.jpg" alt="Photo 1" onclick="openModal(this.src)">
+                <img src="chelliimg2.jpg" alt="Photo 2" onclick="openModal(this.src)">
+                <img src="chelliimg3.jpg" alt="Photo 3" onclick="openModal(this.src)">
+                <img src="chelliimg4.jpg" alt="Photo 4" onclick="openModal(this.src)">
+                <img src="chelliimg5.jpg" alt="Photo 5" onclick="openModal(this.src)">
+                <img src="chelli2-img.jpg" alt="Photo 6" onclick="openModal(this.src)">
+            </div>
+        </section>
+
+        <!-- Modal for images -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024  Photography</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
